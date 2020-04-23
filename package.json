@@ -1,8 +1,7 @@
-{
-  "name": "roserer-portfolio",
+{  "name": "roserer-portfolio",
   "version": "0.0.1",
   "description": "Rose's portfolio",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "test"
   },

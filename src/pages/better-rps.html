@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Rock Paper Sissors</title>
+    <script src="../scripts/better-rps.js"></script>
+</head>
+<body>
+    <a href="../index.html">Home</a>
+    <br>
+    <h2>Let's play Rock Paper Sissors!</h2>
+    <br>
+    <div id="inputbtns">
+        <input type="button" class="gamebtn" value="Rock" onclick="game(this.value)">
+        <input type="button" class="gamebtn" value="Paper" onclick="game(this.value)">
+        <input type="button" class="gamebtn" value="Sissors" onclick="game(this.value)">
+    </div>
+    <div id="results">
+        <p id="round">Click a button to begin the first round...</p>
+        <p id="player-score">Player: 0<br>Computer: 0</p>
+        <p id="selections"></p>
+        <p id="winner"></p>
+    </div>
+    <br>
+    <div id="control">
+        <p id="end"></p>
+        <input type="button" class="controlbtn" value="Reset" onclick="reset()">
+    </div>
+</body>
+</html>

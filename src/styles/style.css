@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+
+body {
+    color: black;
+    background-size: cover;
+    background-color: #f1faee;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+h2, h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4em;
+    color: #1d3557 !important;
+}
+/* Header Style */
+.header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-height: 800px;
+    flex-direction: column;
+}
+.header .head-text {
+    padding-top: 100px;
+    align-self: center;
+    z-index: 2;
+}
+.header #background-img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+/* --Button Style */
+#project-buttons {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin: 0;
+}
+#project-buttons a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #f1faee;
+    text-align: center;
+    padding: 18px;
+    height: 1em;
+    width: 100%;
+    z-index: 2;
+}
+.colored-btn-background {
+    display: flex;
+    background-color: #e63946 ;
+    margin-top: 2em;
+    width: 200px;
+    height: inherit;
+}
+.btn-overlay {
+    display: flex;
+    justify-self: center;
+    margin: 0;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #e57239;
+    z-index: 1;
+}
+.colored-btn-background:hover .btn-overlay{
+    opacity: .5;
+}
+/* Lower Content Style */
+.lower-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.lower-content h3 {
+    color: #457b9d !important;
+    margin: 0;
+    padding: 1em;
+}

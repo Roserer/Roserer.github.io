@@ -1,0 +1,19 @@
+{
+  "name": "roserer-portfolio",
+  "version": "0.0.1",
+  "description": "Rose's portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roserer/Roserer.github.io.git"
+  },
+  "author": "Rose Aranaga-Hill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roserer/Roserer.github.io/issues"
+  },
+  "homepage": "https://github.com/Roserer/Roserer.github.io#readme"
+}

@@ -6,7 +6,7 @@ function computerPlay() {
         case 1:
             return 'paper';  
         default:
-            return 'sissors';
+            return 'scissors';
     }
 }
 function playRound(playerSelect, compSelect) {
@@ -18,17 +18,17 @@ function playRound(playerSelect, compSelect) {
         case 'rock': {
             return (compSelect == 'paper' ?
                 [0, 1, "You loose! Paper beats Rock"] :
-                [1, 0, "You win! Rock beats Sissors"]);
+                [1, 0, "You win! Rock beats scissors"]);
         }
         case 'paper': {
-            return (compSelect == 'sissors' ?
-                [0, 1, "You loose! Sissors beats Paper"] :
+            return (compSelect == 'scissors' ?
+                [0, 1, "You loose! scissors beats Paper"] :
                 [1, 0, "You win! Paper beats Rock"]);
         }
-        case 'sissors': {
+        case 'scissors': {
             return (compSelect == 'rock' ?
-                [0, 1, "You loose! Rock beats Sissors"] :
-                [1, 0, "You win! Sissors beats Paper"]);
+                [0, 1, "You loose! Rock beats scissors"] :
+                [1, 0, "You win! scissors beats Paper"]);
         }
         default:{
             return [0, 0, "You entered an invalid answer!"];

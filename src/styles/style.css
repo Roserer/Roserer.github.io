@@ -85,7 +85,7 @@ h2, h3 {
 .lower-content h3 {
     color: #457b9d !important;
     margin: 0;
-    padding: 1em 1em 0.5em;
+    padding: 1em 1em 1em;
     text-align: center;
 }
 .lower-content p {
@@ -99,16 +99,21 @@ h2, h3 {
     width: 100%;
 }
 @media (min-width: 700px) {
-    .lower {
-        display: flex;
-        flex-direction: row;
+    .about-sec {
+        display: grid;
+        grid-template-columns: auto 400px;
+        grid-template-areas: "abt-text pic";
+        grid-template-rows: max-content;
+        width: 100%;
     }
     .lower-content img {
-        width: 50%;
+        grid-area: pic;
         max-height: 400px;
         max-width: 400px;
+        right: 0;
     }
     .lower-content .lower-text {
+        grid-area: abt-text;
         display: flex;
         flex-direction: column;
     }

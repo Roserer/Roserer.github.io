@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
-
 body {
     color: black;
     background-size: cover;
@@ -8,12 +7,17 @@ body {
     height: 100%;
     margin: 0;
 }
-h2, h3 {
+
+h2,
+h3 {
     font-family: 'Bebas Neue', cursive;
     font-size: 3.75em;
     color: #1d3557 !important;
 }
+
+
 /* Top Style */
+
 .header-cont {
     background: url('../assets/home/bluemountains.jpg') no-repeat center top fixed;
     background-size: cover;
@@ -22,14 +26,16 @@ h2, h3 {
     top: 0;
     width: 100%;
 }
+
 .top {
-    animation: fadeIn 1.8s forwards;
+    animation: fadeIn 1s forwards;
     display: flex;
     position: relative;
     width: 100%;
     min-height: 800px;
     flex-direction: column;
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -40,13 +46,17 @@ h2, h3 {
         transform: translateY(0);
     }
 }
+
 .top .top-text {
     padding-top: 100px;
     align-self: center;
     z-index: 2;
     margin: 20px;
 }
+
+
 /* --Button Style */
+
 #project-buttons {
     display: flex;
     flex-direction: column;
@@ -56,6 +66,7 @@ h2, h3 {
     width: 220px;
     margin: 10px 0;
 }
+
 .colored-proj-btns {
     background-color: #e63946;
     border: none;
@@ -72,22 +83,28 @@ h2, h3 {
     line-height: 60px;
     transition: .25s;
 }
+
 .colored-proj-btns:hover {
     background-color: #E5553F;
 }
+
+
 /* Lower Content Style */
+
 .lower-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .lower-content h3 {
     color: #457b9d !important;
     margin: 0;
     padding: 1em 1em 1em;
     text-align: center;
 }
+
 .lower-content p {
     color: #1d3557;
     font-family: 'Montserrat', sans-serif;
@@ -95,9 +112,11 @@ h2, h3 {
     padding: 0 2em;
     margin: 0 0 2em;
 }
+
 .lower-content img {
     width: 100%;
 }
+
 @media (min-width: 700px) {
     .about-sec {
         display: grid;

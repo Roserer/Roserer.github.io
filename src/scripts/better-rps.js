@@ -28,7 +28,7 @@ function playRound(playerSelect, compSelect) {
         case 'scissors': {
             return (compSelect == 'rock' ?
                 [0, 1, "You loose! Rock beats scissors"] :
-                [1, 0, "You win! scissors beats Paper"]);
+                [1, 0, "You win! Scissors beats Paper"]);
         }
         default:{
             return [0, 0, "You entered an invalid answer!"];
@@ -66,7 +66,7 @@ function game(playerSelection) {
             btns[i].disabled = true;
         }
         document.getElementById("end").innerHTML
-            = `End of game... ${winLoose(playerScore, compScore)}`;
+            = `<span id="win-msg">${winLoose(playerScore, compScore)}</span><br><span id="reset-msg">Reset to play again...</span>`;
     }
 }
 function reset() {
@@ -74,7 +74,7 @@ function reset() {
     compScore = 0;
     round = 0;
     document.getElementById("round").innerHTML
-        = `Click a button to begin the first round...`;
+        = `Round 0`;
     document.getElementById("player-score").innerHTML
         = `Score: ${playerScore}`;
     document.getElementById("winner").innerHTML

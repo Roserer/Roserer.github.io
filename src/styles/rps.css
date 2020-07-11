@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Montserrat&display=swap');
+
+body {
+    background-color: #011627;
+    color: #FDFFFC;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Galada', cursive;
+    margin-top: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+
+#results {
+    width: 40%;
+}
+
+#stats {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#inputbtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.menu-ico{
+    width: 32px;
+    height: 32px;
+}
+
+.game-ico {
+    width: 128px;
+    height: 128px;
+}
+
+.ico-circle {
+    z-index: -1;
+}
+
+.game-ico:hover .ico-circle {
+    fill: rgb(127, 139, 146, 1);
+    animation: grow .4s forwards ease-in;
+}
+
+.game-ico:hover::after .ico-circle {
+    animation: grow .3s backwards ease-in;
+}
+
+#control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#win-msg {
+    font-family: 'Galada', cursive;
+    font-size: 4em;
+}
+
+@keyframes grow{
+    from {
+        fill: rgb(127, 139, 146, 0);
+    }
+    to {
+        r: 50%;
+    }
+}

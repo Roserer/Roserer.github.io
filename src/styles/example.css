@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #020122;
+    background-color: #E8F1F2;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #020122;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: #FF521B;
+}
+
+.hdr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.8em 3em;
+    align-items: center;
+    background-color: #E8F1F2;
+    box-shadow: 5px 1px 8px grey;
+}
+
+.hdr li {
+    display: inline;
+    padding: .5em 1em;
+    font-size: 1.1em;
+    margin: 1.5em;
+    margin-right: 0;
+}
+
+#logo p {
+    font-family: 'Lobster', cursive;
+    color: #157A6E;
+    font-size: 3em;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-top: -.2em;
+}
+
+.content {
+    padding: 1em 1em;
+}

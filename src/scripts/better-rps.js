@@ -17,17 +17,17 @@ function playRound(playerSelect, compSelect) {
     switch (playerSelectLow) {
         case 'rock': {
             return (compSelect == 'paper' ?
-                [0, 1, "You loose! Paper beats Rock"] :
+                [0, 1, "You lose! Paper beats Rock"] :
                 [1, 0, "You win! Rock beats scissors"]);
         }
         case 'paper': {
             return (compSelect == 'scissors' ?
-                [0, 1, "You loose! scissors beats Paper"] :
+                [0, 1, "You lose! scissors beats Paper"] :
                 [1, 0, "You win! Paper beats Rock"]);
         }
         case 'scissors': {
             return (compSelect == 'rock' ?
-                [0, 1, "You loose! Rock beats scissors"] :
+                [0, 1, "You lose! Rock beats scissors"] :
                 [1, 0, "You win! Scissors beats Paper"]);
         }
         default:{
@@ -87,3 +87,10 @@ function reset() {
         btns[i].disabled = false;
     }
 }
+
+var add = (function () {
+    var counter = 0;
+    return function () {
+        counter += 1;
+        return counter;}
+  })();

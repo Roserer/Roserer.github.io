@@ -4,11 +4,13 @@ body {
     background-color: #011627;
     color: #FDFFFC;
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
 
 h1 {
     font-family: 'Galada', cursive;
     margin-top: 10px;
+    font-size: 3em;
 }
 
 header {
@@ -29,6 +31,7 @@ header {
 
 #results {
     width: 40%;
+    text-align: center;
 }
 
 #stats {
@@ -57,8 +60,8 @@ button {
 }
 
 .game-ico {
-    width: 128px;
-    height: 128px;
+    width: 192px;
+    height: 192px;
 }
 
 .ico-circle {
